@@ -1,0 +1,48 @@
+
+
+TOPIC  Docker Swarm v K8s Pod Docker
+Swarm/Compose == K8s Pod
+
+Networking
+Kubernetes
+Flat network (implemented typically as an overlay), allows all pods to interact.
+Needs two CIDRs:  One for the services; One from which pods acquire an IP address.
+Classless inter-domain routing CIDR - a system of routing IPv4 addresses.
+
+Docker Swarm
+Node joining a swarm cluster generates an overlay network for services that
+span every host in the swarm and a host-only docker bridge network for containers.
+
+
+TOPIC  KUBECTL
+command:
+kubectl config get-contexts
+
+result:
+CURRENT NAME                CLUSTER          AUTHINFO    NAMESPACE
+*       docker-for-desktop  docker-for-desktop-cluster   docker-for-desktop
+
+To Change:
+kubectl config use-context docker-for-desktop
+
+CGroups
+
+
+TOPIC
+A Linux kernel feature that limits, accounts for, and isolates the resource usage
+(CPU, memory, disk I/O, network, etc.) of a collection of processes.
+Docker relies on cgroups to control and isolate resource limits.
+
+
+TOPIC  Docker Swarm v K8s Pod Docker
+Swarm/Compose == K8s Pod
+
+Networking
+Kubernetes
+Flat network (implemented typically as an overlay), allows all pods to interact.
+Needs two CIDRs:  One for the services; One from which pods acquire an IP address.
+Classless inter-domain routing CIDR - a system of routing IPv4 addresses.
+
+Docker Swarm
+Node joining a swarm cluster generates an overlay network for services that
+span every host in the swarm and a host-only docker bridge network for containers.
